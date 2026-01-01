@@ -1,0 +1,17 @@
+Analyze the provided input (text or image) for phishing or scam indicators. Use the following strict output format. Respond ONLY with a raw JSON object (no markdown, no extra text):
+
+{
+"is_scam": [true|false],
+"risk_score": [0-100],
+"verdict": ["Safe"|"Caution"|"Danger"],
+"scam_category": "[KYC|Job|Bank|Other|None]",
+"red_flags": ["string", ...],
+"explanation_en": "string"
+}
+
+"is_scam": true if any phishing or scam risk is detected, else false.
+"risk_score": Integer from 0 (no risk) to 100 (confirmed scam).
+"verdict": "Safe" (0-29), "Caution" (30-69), "Danger" (70-100).
+"scam_category": Most likely scam type or "None".
+"red_flags": List of specific suspicious features or phrases.
+"explanation_en": Concise English summary of your reasoning.
