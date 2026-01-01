@@ -1,16 +1,38 @@
-# React + Vite
+# PhishShield
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PhishShield is an advanced phishing detection platform leveraging AI and Google Cloud technologies to protect users from malicious websites and emails. The project is designed to provide real-time threat analysis and automated response to phishing attempts.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Google Technologies
+- **Firebase**: Used for authentication, real-time database, and hosting serverless functions.
+- **Google Cloud Functions**: For backend logic and AI model inference.
+- **Google Vision API**: For image analysis and detection of suspicious content.
+- **Google Safe Browsing API**: To check URLs against Google's constantly updated list of unsafe web resources.
 
-## React Compiler
+### Other Technologies
+- **React**: Frontend framework for building the user interface.
+- **Vite**: Fast build tool for modern web projects.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## About the Project
 
-## Expanding the ESLint configuration
+PhishShield aims to provide a seamless and secure experience for users by integrating AI-powered phishing detection with Google’s robust cloud infrastructure. The platform analyzes URLs, email content, and images using machine learning models and Google APIs to identify potential threats. When a phishing attempt is detected, users are notified instantly and guided on how to stay safe.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## AI Usage
+
+- **Machine Learning Models**: Custom-trained models are used to classify URLs and email content as safe or suspicious.
+- **Natural Language Processing (NLP)**: Analyzes email text and website content for phishing indicators.
+- **Image Recognition**: Detects fake login pages and suspicious images using Google Vision API.
+- **Continuous Learning**: The system improves over time by learning from new phishing techniques and user feedback.
+
+## Usage
+
+1. Sign up or log in using Firebase Authentication.
+2. Submit a URL or email for analysis.
+3. Receive instant feedback on the safety of the submitted content.
+4. View detailed reports and recommendations.
+
+## License
+
+MIT
